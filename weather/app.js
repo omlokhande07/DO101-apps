@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+console.log("this is weather app made with getting api key from website ");
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
